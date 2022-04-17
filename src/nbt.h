@@ -85,7 +85,7 @@ void nbt_skip_int_array(nbt_state* nbt) {
 
 void nbt_skip_long_array(nbt_state* nbt) {
     int32_t size = nbt_read_int(nbt);
-    nbt->ptr += size * 4;
+    nbt->ptr += size * 8;
 }
 
 void nbt_skip_string(nbt_state* nbt) {
